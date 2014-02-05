@@ -15,7 +15,10 @@ nconf.env();
 before(function() {
   var keys = {
     digitalocean_clientid: nconf.get('DIGITALOCEAN_CLIENTID'),
-    digitalocean_apikey: nconf.get('DIGITALOCEAN_APIKEY')
+    digitalocean_apikey: nconf.get('DIGITALOCEAN_APIKEY'),
+    twilio_accountsid: nconf.get('TWILIO_ACCOUNTSID'),
+    twilio_authtoken: nconf.get('TWILIO_AUTHTOKEN'),
+    twilio_phone: nconf.get('TWILIO_PHONE')
   };
 
   api = new DropletLib(keys, '14083328010');

@@ -15,9 +15,9 @@ var API = function(keys, to) {
   this.progressMonitor = new ProgressMonitor(this.do_client);
 
   this.twilio_client = new TwilioClient(
-    'ACf22d5d634e9e99b7572be0cab3059cbb',
-    '786428c57b3413df4f2af408154976b3',
-    '+16502625790');
+    keys.twilio_accountsid,
+    keys.twilio_authtoken,
+    keys.twilio_phone);
 
   this.to = to;
 };
