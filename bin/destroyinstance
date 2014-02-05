@@ -1,0 +1,2 @@
+#!/bin/sh
+curl -s "https://api.digitalocean.com/droplets/$1/destroy/?client_id=$DIGITALOCEAN_CLIENTID&api_key=$DIGITALOCEAN_APIKEY"

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+ID=$1
+NAME=$2
+
+curl -s "https://api.digitalocean.com/droplets/$ID/rename/?client_id=$DIGITALOCEAN_CLIENTID&api_key=$DIGITALOCEAN_APIKEY&name=$NAME"
+echo

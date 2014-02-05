@@ -1,0 +1,7 @@
+#!/bin/sh
+SIZE_ID=66
+IMAGE_ID=1126994
+REGION_ID=4
+SSH_KEY_IDS=23833
+
+curl -s "https://api.digitalocean.com/droplets/new?client_id=$DIGITALOCEAN_CLIENTID&api_key=$DIGITALOCEAN_APIKEY&name=$1&size_id=$SIZE_ID&image_id=$IMAGE_ID&region_id=$REGION_ID&ssh_key_ids=$SSH_KEY_IDS"
